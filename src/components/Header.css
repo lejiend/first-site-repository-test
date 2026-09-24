@@ -1,0 +1,28 @@
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 16px 32px;
+
+  nav {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  a {
+    color: var(--text-h);
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+
+    &:hover {
+      background: var(--social-bg);
+    }
+
+    &.active {
+      color: var(--accent);
+      background: var(--accent-bg);
+    }
+  }
+}
